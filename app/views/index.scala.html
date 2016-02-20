@@ -1,55 +1,109 @@
-@(message: String)
+<html>
+<head>
+	<meta meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheet/style.css")">
+	<script src="@routes.Assets.at("javascripts/jquery-1.11.3.min.js")"></script>
+	<script type="text/javascript" src="@routes.Assets.at("javascripts/script.js")"></script>
+	<title>Адвокатское бюро: Успех</title>
+</head>
+<body>
 
-@main("GettingStarted") {
+	<div id="header">
+		<div class="img-overlay">
+			<div class="name">
+				<h2>Адвокатское бюро:</h2>
+				<br>
+				<h1>"Успех"</h1>
+			</div>
+			<div class="block-right">
+				<p>Телефоны: 220-38-73, 270-40-11</p>
+				<p>Адресс: улица Жуковского, 82</p>
+				<p>Электронная почта: uspex07@mail.ru</p>
+			<div class="navigation">
+				<h2>Что Вас интересует?</h2>
+				<hr>
+				<ul>
+					<a href="#ab"><li>О Нас</li></a>
+					<a href="#mp"><li>На карту</li></a>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</div>
 
-<div class="jumbotron text-center">
-  <div class="container">
-    <a href="/" class="lang-logo">
-      <img src="@routes.Assets.at("images/lang-logo.png")">
-    </a>
-    <h1>Getting Started with Scala/Play on Heroku</h1>
-    <p>This is a sample Play application deployed to Heroku. It's a reasonably simple app - but a good foundation for understanding how to get the most out of the Heroku platform.</p>
-    <a type="button" class="btn btn-lg btn-default" href="https://devcenter.heroku.com/articles/getting-started-with-scala"><span class="glyphicon glyphicon-flash"></span> Getting Started with Scala/Play</a>
-    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/heroku/scala-getting-started"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
-  </div>
-</div>
-<div class="container">
-  @if(message != null){
-  <div class="alert alert-success text-center" role="alert">
-    @message
-  </div>
-  }
-  <div class="alert alert-info text-center" role="alert">
-    To deploy your own copy, and learn the fundamentals of the Heroku platform, head over to the <a href="https://devcenter.heroku.com/articles/getting-started-with-scala" class="alert-link">Getting Started with Scala/Play on Heroku</a> tutorial.
-  </div>
-  <hr>
-  <div class="row">
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-info-sign"></span> How this sample app works</h3>
-      <ul>
-        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/scala-getting-started">Heroku Button</a> on the repository.</li>
+	<div id="head">
 
-        <li>When Heroku received the source code, it grabbed all the dependencies in the <a href="https://github.com/heroku/scala-getting-started/blob/master/build.sbt">build.sbt</a>.</li>
-        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-        <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
-        <li>Check out the <a href="https://devcenter.heroku.com/articles/getting-started-with-scala">Getting Started</a> guide to learn more!</li>
-      </ul>
-    </div>
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-link"></span> Helpful Links</h3>
-      <ul>
-        <li><a href="https://www.heroku.com/home">Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/">Heroku Dev Center</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-scala">Getting Started with Scala/Play on Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/deploying-scala">Deploying Scala Apps on Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/play-support">Heroku Play Framework Support</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/scala-support">Heroku Scala Support</a></li>
-      </ul>
-    </div>
-  </div> <!-- row -->
-   <div class="alert alert-info text-center" role="alert">
-    Please do work through the Getting Started guide, even if you do know how to build such an application.  The guide covers the basics of working with Heroku, and will familiarize you with all the concepts you need in order to build and deploy your own apps.
-  </div>
-</div>
+	</div>
 
-}
+	<div id="block-info">
+		<div class="about" id="ab">
+			<h1>О Нас</h1>
+			<p>
+				Общество с ограниченной ответственностью «Адвокатское бюро «Успех» основано в мае 2007 года. Бюро оказывает разнообразные юридические услуги национальному бизнесу, органам государственной власти и физическим лицам на всей территории Украины.
+				<br>
+				<br>
+				Специалисты Бюро, имея богатый опыт и стаж работы в судебных и правоохранительных органах, предоставляют широкий спектр юридических услуг, включая юридические консультации и разрешение споров в областях уголовного, гражданского, корпоративного, административного, семейного, трудового, жилищного, земельного и аграрного права, недвижимости и строительства, налогообложения и социального обеспечения, транспортного права и таможни.
+				<br>
+				<br>
+				В своей практике мы сочетаем опыт работы на рынках с международными профессиональными стандартами. Для решения задач клиентов мы предлагаем индивидуальный комплексный подход, сочетающий юридический консалтинг, представление интересов клиентов в органах государственной власти, взаимодействие со средствами массовой информации и общественностью и другие услуги.
+				<br>
+				<br>
+				Благодаря своему профессиональному опыту наши юристы отлично разбираются во  внутренних особенностях работы государственных структур и являются выпускниками самых престижных юридических вузов. 
+				<br>
+				<br>
+				Адвокаты Бюро являются членами Национальных ассоциации адвокатов Украины, а один из них также входит в Международный Союз (Содружество) адвокатов.
+				<br>
+				<br>
+				Во всех юрисдикциях присутствия специалисты Бюро принимают активное участие в жизни делового и юридического сообщества и регулярно привлекаются в качестве консультантов по различным аспектам права органами исполнительной, законодательной и судебной власти.
+				<br>
+				<br>
+				<i>С  адвокатским бюро <b>«Успех»</b> вам всегда будет сопутствовать успех в делах.</i>
+			</p>
+		</div>
+
+		<div class="photo">
+			<img src="@routes.Assets.at("images/photo1.1.png")">
+			<h3>Саркисов Альберт Карленович</h3>
+			<img src="@routes.Assets.at("images/photo2.2.png")">
+			<h3>Семикин Вадим Витальевич</h3>
+			<img src="@routes.Assets.at("images/photo3.3.png")">
+			<h3>Руднев Олег Александрович</h3>
+	 	</div>
+
+		<div class="video">	
+			<iframe width="420" height="315" src="https://www.youtube.com/embed/NXDIKfShnWM" frameborder="0" allowfullscreen>
+			</iframe>
+		</div>
+
+	<div class="block-map">
+		<h1 id="mp">Нас можно найти здесь</h1>
+		<div class="map">
+			<h1>Загрузка карты...</h1>
+			<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=9b__qJTm5YK_YoLRwcuHudqAzTb1lkye&width=900&height=400&lang=ru_UA&sourceType=constructor">
+			</script>
+		</div>
+	</div>
+	
+	<div class="poster">
+		<img src="@routes.Assets.at("images/pos.JPG")">
+	</div>
+
+	<div class="footer">
+		<div class="name-foot">
+			<h3>Адвокатское бюро:</h3>
+			<h2>"Успех"</h2>
+		</div>
+		<div class="foot-nav">
+			<a href="#ab">О Нас</a>
+			<a href="#mp">На карту</a>
+		</div>
+		<div class="foot-phone">
+			<p>Телефоны: 220-38-73, 270-40-11</p>
+			<p>Адресс: улица Жуковского, 82</p>
+		</div>
+	</div>
+	
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+
+*{
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+@font-face{
+	font-family: 'Ahellya';
+	src: url('../fonts/ahellya.ttf'),
+	url('../fonts/ahellya.ttf') format('truetype');
+	font-style: normal;
+}
+body{
+	background: rgb(250, 250, 250);
+}
+a{
+	text-decoration: none;
+}
+#header{
+	width: 100%;
+	min-width: 900px;
+	height: 100%;
+	background: rgb(222, 222, 222);
+	margin: 0 auto;
+	background: url(../images/header.jpg) no-repeat;
+	-moz-background-size: 100%; 
+    -webkit-background-size: 100%; 
+    -o-background-size: 100%;
+    background-size: 100%;
+}
+#header .img-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(45,45,45,0.7);
+}
+#head{
+
+}
+.name{
+	float: left;
+	padding: 50px 0 0 100px;
+	color: #fff;
+	font-family: 'Ahellya';
+}
+.name h2{
+	font-size: 34px;
+	letter-spacing: 3px;
+}
+.name h1{
+	font-size: 60px;
+	letter-spacing: 1px;
+}
+.block-right{
+	float: right;
+	padding: 120px 100px 0 0;
+	color: #fff;
+}
+.block-right p{
+	font-size: 18px;
+	line-height: 2;
+}
+.navigation{
+	/*float: right;*/
+	padding: 100px 100px 0 0;
+}
+.navigation h2{
+	text-align: center;
+	font-family: 'Ahellya';
+	font-size: 24px;
+	color: #b2920a;
+}
+.navigation hr{
+	width: 200px;
+	margin-top: 10px;
+	border: 1px solid #b2920a;
+	opacity: 0.2;
+}
+.navigation ul{
+	padding: 0px 0px 0 23px;
+	list-style-type: none;
+	line-height: 50px;
+	font-size: 20px;
+}
+.navigation ul li{
+	color: #fff;
+	font-family: 'Ahellya';
+}
+.navigation ul li:hover{
+	color: #b2920a;
+	list-style-type: square;
+}
+#block-info{
+	width: 900px;
+	margin: 0 auto;
+}
+.about{
+	width: 450px;
+	margin-top: 40px;
+	/*margin-bottom: 10px;*/
+	float: left;
+	font-family: 'Ahellya';
+	letter-spacing: 1px;
+	color: #424242;
+}
+.about h1{
+	text-align: center;
+	margin-bottom: 15px;
+	color: #6b5807;
+}
+.photo{
+	width: 400px;
+	float: right;
+	/*margin-top: 5px;*/
+	font-family: 'Ahellya';
+	letter-spacing: 1px;
+	color: #6b5807;
+}
+.photo img{
+	width: 260px;
+	float: right;
+	margin-top: 40px;
+}
+.photo h3{
+	margin-top: 12px;
+	float: right;
+}
+.video{
+	width: 420px;
+	clear: both;
+	/*float: left;*/
+	margin: 0 auto;
+	padding-top: 30px;
+	margin-bottom: 80px;
+}
+.block-map{
+	clear: both;
+	/*margin-bottom: 40px;*/
+}
+.block-map h1{
+	margin-top: 50px;
+	margin-bottom: 15px;
+	text-align: center;
+	color: #6b5807;
+	font-family: 'Ahellya';
+	letter-spacing: 1px;
+}
+.map{
+	width: 900px;
+	height: 400px;
+}
+.map h1{
+	/*text-align: center;*/
+	padding: 160px 0 0 0;
+	position: absolute;
+}
+.poster{
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+.poster img{
+	width: 900px;
+	height: 500px;
+}
+.footer{
+	width: 900px;
+	height: 120px;
+	margin-bottom: 3px;
+	background: rgb(45,45,45);
+}
+.name-foot{
+	float: left;
+	padding: 40px 40px 0px 30px;
+	letter-spacing: 1px;
+	font-family: 'Ahellya';
+	color: #fff;
+}
+.foot-nav{
+	float: right;
+	margin-top: 50px;
+}
+.foot-nav a{
+	color: #fff;
+	padding: 50px 20px 20px 20px;
+	text-decoration: none;
+}
+.foot-nav a:hover{
+	color: #6b5807;
+}
+.foot-phone{
+	color: #fff;
+	padding: 40px;
+}
