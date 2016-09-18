@@ -5,12 +5,12 @@
 	<script src="@routes.Assets.at("javascripts/jquery-2.2.2.min.js")"></script>
 	<script src="@routes.Assets.at("javascripts/angular.min.js")"></script>
 	<script src="@routes.Assets.at("javascripts/app.ang.js")"></script>
-	<title>Адвокатское бюро: Успех</title>
+	<title>Site parsing alpha</title>
 </head>
 <body ng-app="main-app" ng-controller="AppCtrl">
 <div>
 	<input type="text" name="url_of_site" ng-model="site_url">
-	<input type="text" name="html_tags" ng-model="tags">
+
 	<input type="button" ng-click="testing_data(site_url, tags)" value="Testing">
 
 	<textarea ng-model="tesing_answ">
