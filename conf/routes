@@ -5,4 +5,10 @@
 # Home page
 GET     /                           controllers.Application.index
 
+POST    /test/                       controllers.Application.testingData
+
+POST    /generate_link/              controllers.Application.generateLink
+
+GET     /id/:id/                     controllers.Application.getData(id:Long)
+
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
