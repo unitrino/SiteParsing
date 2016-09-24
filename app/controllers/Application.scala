@@ -37,6 +37,17 @@ class Application @Inject()(dbConfigProvider: DatabaseConfigProvider) extends Co
   val table = TableQuery[UsersQuiries]
   val link = "http://127.0.0.1:9000/id/"
 
+//
+  def getInfoWithList(url:String, htlmTags: List[String]): JsObject = {
+    val doc = JsoupBrowser().get(url)
+    val allText:Map[String, List[Element]] = htlmTags.map( elem => (elem, doc >> elementList(elem)) ).toMap
+    val out: JsObject = JsObject(allText.map(zz => (zz._1, JsArray(zz._2.map( ll => JsString(ll.text))))))
+    println(out)
+    out
+  }
+
+
+
 
   def getInfo(url:String, htlmTags: String): JsArray = {
       val doc = JsoupBrowser().get(url)
@@ -55,6 +66,14 @@ class Application @Inject()(dbConfigProvider: DatabaseConfigProvider) extends Co
     )(UserQuery.apply)(UserQuery.unapply)
   )
 
+
+
+  def testingAction = Action {
+    val answ = getInfoWithList("http://eax.me/", List(".post-title", ".entry"))
+    println(answ)
+
+    Ok(Json.toJson(Map("answ" -> answ)).toString())
+  }
 
 
   def index = Action {
