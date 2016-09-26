@@ -11,7 +11,7 @@ GET    /test/                       controllers.Application.testingAction
 
 POST    /generate_link/              controllers.Application.generateLink
 
-GET     /id/:id/                     controllers.Application.getData(id:Long)
+GET     /id/:id/                     controllers.Application.getData(id:Int)
 
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
 

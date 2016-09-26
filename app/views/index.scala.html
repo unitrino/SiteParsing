@@ -10,8 +10,12 @@
 <body ng-app="main-app" ng-controller="AppCtrl">
 <div>
 	<input type="text" name="url_of_site" ng-model="site_url">
+	<div ng-repeat="t in tags_fields track by $index">
+		<input type="text" id="tags" ng-model="our_tags[$index]">
+	</div>
+	<input type="button" ng-click="add_new_tag_field()" value="Add new tag">
 
-	<input type="button" ng-click="testing_data(site_url, tags)" value="Testing">
+	<input type="button" ng-click="testing_data(site_url)" value="Testing">
 
 	<textarea ng-model="tesing_answ">
 	</textarea>
